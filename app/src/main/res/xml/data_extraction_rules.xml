@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Define what to include and exclude from cloud backup.
+             By default, all shared preferences, files in getFilesDir() and getDatabasePath()
+             are backed up.
+             Use <include /> and <exclude /> tags. For example:
+        <exclude domain="sharedpref" path="temporary_session_data.xml"/>
+        <exclude domain="database" path="my_temp_db"/>
+        -->
+        <include domain="sharedpref" path="WellnessAppPrefs.xml"/> <!-- Include your main preferences -->
+        <exclude domain="sharedpref" path_pattern=".*_temp\.xml"/> <!-- Example: exclude temp prefs -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- TODO: Define what to include and exclude from device-to-device transfer.
+             By default, all data specified for cloud backup is also included in D2D transfers.
+        <include .../>
+        <exclude .../>
+        -->
+    </device-transfer>
+</data-extraction-rules>

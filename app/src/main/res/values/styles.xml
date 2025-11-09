@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView.Custom" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconSize">30dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextColor">@color/on_primary_container_dark</item>
+        <item name="itemIconTint">@color/on_primary_container_dark</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+
+        <style name="EmojiGridItem">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_margin">4dp</item>
+            <item name="android:padding">12dp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:textSize">32sp</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:background">@drawable/emoji_button_background</item>
+            <item name="android:clickable">true</item>
+            <item name="android:focusable">true</item>
+        </style>
+
+</resources>

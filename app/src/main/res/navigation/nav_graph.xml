@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.wellnessapp.fragments.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_habits"
+        android:name="com.example.wellnessapp.fragments.HabitsFragment"
+        android:label="Habits"
+        tools:layout="@layout/fragment_habits" />
+
+    <fragment
+        android:id="@+id/navigation_mood"
+        android:name="com.example.wellnessapp.fragments.MoodJournalFragment"
+        android:label="Mood Journal"
+        tools:layout="@layout/fragment_mood_journal" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.wellnessapp.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

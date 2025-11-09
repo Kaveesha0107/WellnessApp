@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO: Define what to include and exclude from backup.
+         By default, all shared preferences, files in getFilesDir() and getDatabasePath()
+         are backed up.
+         Use <include /> and <exclude /> tags. For example:
+    <exclude domain="sharedpref" path="device.xml"/>
+    -->
+    <include domain="sharedpref" path="WellnessAppPrefs.xml"/>
+</full-backup-content>
