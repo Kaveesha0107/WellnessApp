@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1.0"
+        android:contentDescription="@string/app_logo_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/smallAppLogo"
+        android:layout_width="82dp"
+        android:layout_height="85dp"
+        android:alpha="0.95"
+        android:contentDescription="@string/app_logo_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="91dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:alpha="1"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.08"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="#388E3C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha="0.85"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/app_slogan"
+        android:textColor="@color/grey_text"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="1"
+        android:indeterminateTint="#388E3C"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/versionInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/versionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="1.0"
+        android:fontFamily="sans-serif-light"
+        android:text="Version 1.0"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
