@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mood_entry_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_mood_emoji"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/grey_bg"
+            android:gravity="center"
+            android:textColor="#374151"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="😊" />
+
+        <TextView
+            android:id="@+id/tv_mood_note_snippet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="#374151"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_mood_timestamp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintStart_toEndOf="@+id/tv_mood_emoji"
+            app:layout_constraintTop_toTopOf="@+id/tv_mood_emoji"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="No note" />
+
+        <TextView
+            android:id="@+id/tv_mood_timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="#6B7280" android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mood_emoji"
+            app:layout_constraintEnd_toEndOf="@+id/tv_mood_note_snippet"
+            app:layout_constraintStart_toStartOf="@+id/tv_mood_note_snippet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mood_note_snippet"
+            tools:text="Sep 27, 2025 17:22" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete Mood Entry"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#DE4836" /> </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
