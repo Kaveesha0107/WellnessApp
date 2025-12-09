@@ -17,7 +17,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wellnessapp.R
 import com.example.wellnessapp.adapters.HabitAdapter
 import com.example.wellnessapp.models.Habit
-import com.example.wellnessapp.utils.SharedPrefsManager
 import com.example.wellnessapp.utils.ValidationHelper
 import com.example.wellnessapp.widgets.HabitWidgetProvider
 import com.google.android.material.floatingactionbutton.FloatingActionButton
