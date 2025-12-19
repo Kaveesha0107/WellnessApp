@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.wellnessapp.R
 import com.example.wellnessapp.utils.NotificationHelper
+import com.example.wellnessapp.utils.SharedPrefsManager
 import com.google.android.material.switchmaterial.SwitchMaterial
 
 class SettingsFragment : Fragment() {
